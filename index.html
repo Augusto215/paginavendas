@@ -1,0 +1,487 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="preload" href="https://scripts.converteai.net/d1f9c5dd-2eaa-410e-97a5-8667cc9dea0a/players/64b40c15037324000991ee0f/player.js" as="script">
+<link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
+<link rel="preload" href="https://images.converteai.net/d1f9c5dd-2eaa-410e-97a5-8667cc9dea0a/players/64b40c15037324000991ee0f/thumbnail.jpg" as="image">
+<link rel="preload" href="https://cdn.converteai.net/d1f9c5dd-2eaa-410e-97a5-8667cc9dea0a/64b40bbfe891af000a1d7266/main.m3u8" as="fetch">
+<link rel="dns-prefetch" href="https://cdn.converteai.net">
+<link rel="dns-prefetch" href="https://scripts.converteai.net">
+<link rel="dns-prefetch" href="https://images.converteai.net">
+<link rel="dns-prefetch" href="https://api.vturb.com.br">
+
+</head>
+
+<body>
+    <style>
+        body
+        {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            
+        }
+
+        .navbar-dark .navbar-nav .nav-link
+        {
+            color: #fff !important;
+            font-weight: 500 !important;
+        }
+    </style>
+    <div class="p-2 d-flex justify-content-center align-items-center " style="background: rgb(255, 255, 255);">
+      <span style="color:#000000 !important; font-size: 1.1rem !important;" class="text-center fw-bold">⚠️ Esse vídeo só estará disponivel até: segunda-feira, 27 de novembro de 2023</span>
+
+    </div>
+
+    
+    <header class="fluid-container " style="background: black">
+        
+        <style>
+            #overlay-image {
+    cursor: pointer; /* para indicar que é clicável */
+    z-index: 10; /* para garantir que fique acima do vídeo */
+}
+            @media(max-width:768px)
+            {
+                .navbar-brand img
+                {
+
+                    max-width: 3rem;
+                }
+
+                .mobile-flex
+                {
+                  flex-direction: column !important;
+                  align-items: center !important;
+                }
+
+                .mobile-margin
+
+                {
+                    margin-right: 1rem !important;
+                    max-height: 1.3rem !important;
+                }
+
+                .mobile-fluid
+
+                {
+                    padding: 0 16px !important;
+                }
+
+                .navbar-toggler
+                {
+                    padding: 0 !important;
+                }
+            }
+            
+            .navbar
+            {
+                padding:0 !important;
+            }
+
+            .navbar-brand
+            {
+                padding:0 !important;
+            }
+
+            .circle {
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    animation: blink-animation 1s infinite;
+}
+
+@keyframes blink-animation {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+            
+        </style>
+        <script>
+            document.getElementById('overlay-image').addEventListener('click', function() {
+    this.style.display = 'none';
+    // Adicione aqui qualquer outra ação que deseja realizar quando a imagem for clicada, como iniciar o vídeo
+});
+        </script>
+        <nav class="navbar container navbar-expand-lg navbar-dark ">
+            <div class="container-fluid mobile-fluid">
+                <div class="d-flex align-items-center"><img class="mobile-margin" style="max-height: 1.5rem; margin-right: 2.5rem;" src="assets\img\menu.png">
+                    <a class="navbar-brand" href="#"><img src="assets\img\transferir.png" style="max-height:4rem;"></a></div>
+                
+              <button class="navbar-toggler" disabled style="border: none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <img style="height:2.5rem;" src="assets\img\Captura de tela 2023-11-26 043956.png" alt="toggle icon"> <!-- Imagem personalizada -->
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="d-flex justify-content-center align-items-center w-100 navbar-nav me-auto mb-2 mb-lg-0">
+                 
+                  <li class="nav-item">
+                    <a class="nav-link " href="#">
+                        <span class="circle"></span>
+                        <span class="fw-bold" style="font-size: 1rem !important;">Ao vivo</span>  </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#"><span class="fw-bold" style="font-size: 1rem !important;">Política</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="fw-bold" style="font-size: 1rem !important;">Economia</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="fw-bold" style="font-size: 1rem !important;">Esportes</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="fw-bold" style="font-size: 1rem !important;">Pop</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="fw-bold" style="font-size: 1rem !important;">Viagem e Gastronomia</span></a>
+                  </li>
+                </ul>
+                <span style="margin-left:1rem;">
+                  <span class="header__actions" style="color:#fff !important;">                <img style="height:2.5rem;" src="assets\img\Captura de tela 2023-11-26 043956.png" alt="toggle icon"> <!-- Imagem personalizada -->
+
+                </span>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <style>
+      @import url('https://fonts.cdnfonts.com/css/amazon-ember');
+
+
+      span
+      {
+        font-size: .8rem !important;
+      }
+
+      h5
+      {
+        font-size: 1rem !important;
+      }
+
+      .main-comentarios div span, .main-comentarios h5
+      {
+        font-family: 'Amazon Ember', sans-serif !important;
+      }
+    </style>
+    <div class="mb-5 d-flex flex-column align-items-center container" style="flex-grow: 1;">
+        <img class="mt-4" style="max-width: 100%; width:40rem;" src="assets\img\Dra-Andreia-mostramcomo-preparar-A-VERDADEIRA-RECEITA-DA-BANANA-que-ELIMINA-11kg-de-gordura-em-21-DIAS-5-1024x256-1.png">
+        <div id="vid_6547b6c0793d6300082386b2" style="position:relative;width:100%; max-width:45rem; padding: 56.25% 0 0;"><img id="thumb_6547b6c0793d6300082386b2" src="https://images.converteai.net/63e28235-a56b-493a-b819-6f8ea68e30c4/players/6547b6c0793d6300082386b2/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">
+            <div id="backdrop_6547b6c0793d6300082386b2" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_6547b6c0793d6300082386b2">var s=document.createElement("script");s.src="https://scripts.converteai.net/63e28235-a56b-493a-b819-6f8ea68e30c4/players/6547b6c0793d6300082386b2/player.js",s.async=!0,document.head.appendChild(s);</script>
+
+        <script type="text/javascript" id="scr_6547b6c0793d6300082386b2">var s=document.createElement("script");s.src="https://scripts.converteai.net/63e28235-a56b-493a-b819-6f8ea68e30c4/players/6547b6c0793d6300082386b2/player.js",s.async=!0,document.head.appendChild(s);</script>       <span class="mt-2 fw-bold" style="color:#000000; font-size: 1rem !important;"><span style="font-size: 1rem !important;" id="random-number"></span> Pessoas acessando</span>
+        <div class="mt-5 d-flex justify-content-center align-items">
+          <img style="max-height: 6rem; max-width: 100%;" src="assets\img\kqedby8187536.png">
+        </div>
+        <div class="d-flex mobile-flex mt-5 justify-content-center align-items-start" style="gap:2rem">
+          <img style="max-width:100%; width: 35rem;" src="assets\img\Captura de tela 2023-11-27 002509.png">
+          <img style="max-width:100%; width: 35rem;" src="assets\img\Captura de tela 2023-11-26 212928.png">
+        </div>
+
+        <div class="main-comentarios  p-4 d-flex mt-5 w-100 container flex-column align-items-center" style="gap:2rem; border:solid 2px #000; border-radius:4px;
+        max-width: 50rem;">
+          <h5 class="text-start fw-bold">Principais avaliações do Brasil
+          </h5>
+          <!-- Início Comentário-->
+
+            <div class="comentario d-flex justify-content-center align-items-start flex-column">
+            <div class="d-flex align-items-center justify-content-center" style="gap:.5rem">
+              <img style="border-radius:50%; height: 2rem; width:2rem; object-fit: cover;" src="assets\img\default._CR0,0,1024,1024_SX48_.jpg">
+              <span class="fw-bold text-center d-flex">Carlos José</span>
+            </div>
+            <div class="d-flex justify-content-center align-items center" style="gap:.5rem"> 
+              <span class="d-flex align-items-center"><img style="max-height: 1rem;" src="assets\img\Captura de tela 2023-11-26 235902.png"></span><span class="fw-bold">Muito bom</span></div>
+            <div>
+              <span class="mt-2  d-flex">Avaliado no Brasil em 19 de setembro de 2023
+              </span>
+            </div>
+            <span class="fw-bold" style="color:#c45500 !important;">Compra verificada</span>
+            <span class="" style="max-width: 100%;">Li super rápido. Um romance com thriller, bastante suspense, que faz vc querer saber tudo que vai acontecer. Uma escritora vai continuar o trabalho de outra escritora que está invalidada para continuar, e pra isso vai pra casa dela pra estudar todos os rascunhos e anotações que ela tem, pra aprender sobre como continuar os livros… é incrível, tem um plot twist gigantesco no final</span>
+            <span class=" mt-2">1 pessoa achou isso útil</span>
+            <div class="d-flex justify-content-center align-items-center"><span class="d-flex justify-content-center align-items-center" style="border:solid 1px #2b2b2b; border-radius:6px; padding:0rem 1rem;">Útil</span>&nbsp;<span>|</span>&nbsp;
+            <span>Denunciar</span></div>
+          </div>
+
+          <!-- Final Comentário -->
+
+
+          <!-- Início Comentário-->
+
+          <div class="comentario d-flex justify-content-center align-items-start flex-column">
+            <div class="d-flex align-items-center justify-content-center" style="gap:.5rem">
+              <img style="border-radius:50%; height: 2rem; width:2rem; object-fit: cover;" src="assets\img\default._CR0,0,1024,1024_SX48_.jpg">
+              <span class="fw-bold text-center d-flex">Alessandro</span>
+            </div>
+            <div class="d-flex justify-content-center align-items center" style="gap:.5rem"> 
+              <span class="d-flex align-items-center">
+                <img style="max-height: 1rem;" src="assets\img\Captura de tela 2023-11-26 235902.png"></span>
+                <span class="fw-bold">Excepcional!!</span></div>
+            <div>
+              <span class="mt-2  d-flex">Avaliado no Brasil em 19 de setembro de 2023
+              </span>
+            </div>
+            <span class="fw-bold" style="color:#c45500 !important;">Compra verificada</span>
+            <span class="" style="max-width: 100%;">Li super rápido. Um romance com thriller, bastante suspense, que faz vc querer saber tudo que vai acontecer. Uma escritora vai continuar o trabalho de outra escritora que está invalidada para continuar, e pra isso vai pra casa dela pra estudar todos os rascunhos e anotações que ela tem, pra aprender sobre como continuar os livros… é incrível, tem um plot twist gigantesco no final</span>
+            <span class=" mt-2">2 pessoas acharam isso útil</span>
+            <div class="d-flex justify-content-center align-items-center"><span class="d-flex justify-content-center align-items-center" style="border:solid 1px #2b2b2b; border-radius:6px; padding:0rem 1rem;">Útil</span>&nbsp;<span>|</span>&nbsp;
+            <span>Denunciar</span></div>
+          </div>
+
+          <!-- Final Comentário -->
+
+
+          <!-- Início Comentário-->
+
+          <div class="comentario d-flex justify-content-center align-items-start flex-column">
+            <div class="d-flex align-items-center justify-content-center" style="gap:.5rem">
+              <img style="border-radius:50%; height: 2rem; width:2rem; object-fit: cover;" src="assets\img\default._CR0,0,1024,1024_SX48_.jpg">
+              <span class="fw-bold text-center d-flex">Fátima Rodrigues</span>
+            </div>
+            <div class="d-flex justify-content-center align-items center" style="gap:.5rem"> 
+              <span class="d-flex align-items-center">
+                <img style="max-height: 1rem;" src="assets\img\Captura de tela 2023-11-26 235902.png"></span>
+                <span class="fw-bold">Deu muito certo!</span></div>
+            <div>
+              <span class="mt-2  d-flex">Avaliado no Brasil em 20 de setembro de 2023
+              </span>
+            </div>
+            <span class="fw-bold" style="color:#c45500 !important;">Compra verificada</span>
+            <span class="" style="max-width: 100%;">Li super rápido. Um romance com thriller, bastante suspense, que faz vc querer saber tudo que vai acontecer. Uma escritora vai continuar o trabalho de outra escritora que está invalidada para continuar, e pra isso vai pra casa dela pra estudar todos os rascunhos e anotações que ela tem, pra aprender sobre como continuar os livros… é incrível, tem um plot twist gigantesco no final</span>
+            <span class=" mt-2">3 pessoas acharam isso útil</span>
+            <div class="d-flex justify-content-center align-items-center"><span class="d-flex justify-content-center align-items-center" style="border:solid 1px #2b2b2b; border-radius:6px; padding:0rem 1rem;">Útil</span>&nbsp;<span>|</span>&nbsp;
+            <span>Denunciar</span></div>
+          </div>
+
+          <!-- Final Comentário -->
+
+          <!-- Início Comentário-->
+
+          <div class="comentario d-flex justify-content-center align-items-start flex-column">
+            <div class="d-flex align-items-center justify-content-center" style="gap:.5rem">
+              <img style="border-radius:50%; height: 2rem; width:2rem; object-fit: cover;" src="assets\img\default._CR0,0,1024,1024_SX48_.jpg">
+              <span class="fw-bold text-center d-flex">Rodolfo Vieira</span>
+            </div>
+            <div class="d-flex justify-content-center align-items center" style="gap:.5rem"> 
+              <span class="d-flex align-items-center"><img style="max-height: 1rem;" src="assets\img\Captura de tela 2023-11-26 235902.png"></span>
+              <span class="fw-bold">Além do esperado.</span></div>
+            <div>
+              <span class="mt-2  d-flex">Avaliado no Brasil em 21 de setembro de 2023
+              </span>
+            </div>
+            <span class="fw-bold" style="color:#c45500 !important;">Compra verificada</span>
+            <span class="" style="max-width: 100%;">Li super rápido. Um romance com thriller, bastante suspense, que faz vc querer saber tudo que vai acontecer. Uma escritora vai continuar o trabalho de outra escritora que está invalidada para continuar, e pra isso vai pra casa dela pra estudar todos os rascunhos e anotações que ela tem, pra aprender sobre como continuar os livros… é incrível, tem um plot twist gigantesco no final</span>
+            <span class=" mt-2">1 pessoa achou isso útil</span>
+            <div class="d-flex justify-content-center align-items-center"><span class="d-flex justify-content-center align-items-center" style="border:solid 1px #2b2b2b; border-radius:6px; padding:0rem 1rem;">Útil</span>&nbsp;<span>|</span>&nbsp;
+            <span>Denunciar</span></div>
+          </div>
+
+          <!-- Final Comentário -->
+
+          <!-- Início Comentário-->
+
+          <div class="comentario d-flex justify-content-center align-items-start flex-column">
+            <div class="d-flex align-items-center justify-content-center" style="gap:.5rem">
+              <img style="border-radius:50%; height: 2rem; width:2rem; object-fit: cover;" src="assets\img\default._CR0,0,1024,1024_SX48_.jpg">
+              <span class="fw-bold text-center d-flex">Aline</span>
+            </div>
+            <div class="d-flex justify-content-center align-items center" style="gap:.5rem"> 
+              <span class="d-flex align-items-center"><img style="max-height: 1rem;" src="assets\img\Captura de tela 2023-11-26 235902.png"></span><span class="fw-bold">Incrível!!!</span></div>
+            <div>
+              <span class="mt-2  d-flex">Avaliado no Brasil em 21 de setembro de 2023
+              </span>
+            </div>
+            <span class="fw-bold" style="color:#c45500 !important;">Compra verificada</span>
+            <span class="" style="max-width: 100%;">Li super rápido. Um romance com thriller, bastante suspense, que faz vc querer saber tudo que vai acontecer. Uma escritora vai continuar o trabalho de outra escritora que está invalidada para continuar, e pra isso vai pra casa dela pra estudar todos os rascunhos e anotações que ela tem, pra aprender sobre como continuar os livros… é incrível, tem um plot twist gigantesco no final</span>
+            <span class=" mt-2">4 pessoas acharam isso útil</span>
+            <div class="d-flex justify-content-center align-items-center"><span class="d-flex justify-content-center align-items-center" style="border:solid 1px #2b2b2b; border-radius:6px; padding:0rem 1rem;">Útil</span>&nbsp;<span>|</span>&nbsp;
+            <span>Denunciar</span></div>
+          </div>
+
+          <!-- Final Comentário -->
+
+          <!-- Início Comentário-->
+
+          <div class="comentario d-flex justify-content-center align-items-start flex-column">
+            <div class="d-flex align-items-center justify-content-center" style="gap:.5rem">
+              <img style="border-radius:50%; height: 2rem; width:2rem; object-fit: cover;" src="assets\img\default._CR0,0,1024,1024_SX48_.jpg">
+              <span class="fw-bold text-center d-flex">José de Freitas</span>
+            </div>
+            <div class="d-flex justify-content-center align-items center" style="gap:.5rem"> 
+              <span class="d-flex align-items-center"><img style="max-height: 1rem;" src="assets\img\Captura de tela 2023-11-26 235902.png"></span><span class="fw-bold">Funcionou super bem, recomendo</span></div>
+            <div>
+              <span class="mt-2  d-flex">Avaliado no Brasil em 22 de setembro de 2023
+              </span>
+            </div>
+            <span class="fw-bold" style="color:#c45500 !important;">Compra verificada</span>
+            <span class="" style="max-width: 100%;">Li super rápido. Um romance com thriller, bastante suspense, que faz vc querer saber tudo que vai acontecer. Uma escritora vai continuar o trabalho de outra escritora que está invalidada para continuar, e pra isso vai pra casa dela pra estudar todos os rascunhos e anotações que ela tem, pra aprender sobre como continuar os livros… é incrível, tem um plot twist gigantesco no final</span>
+            <span class=" mt-2">1 pessoa achou isso útil</span>
+            <div class="d-flex justify-content-center align-items-center"><span class="d-flex justify-content-center align-items-center" style="border:solid 1px #2b2b2b; border-radius:6px; padding:0rem 1rem;">Útil</span>&nbsp;<span>|</span>&nbsp;
+            <span>Denunciar</span></div>
+          </div>
+
+          <!-- Final Comentário -->
+
+          <!-- Início Comentário-->
+
+          <div class="comentario d-flex justify-content-center align-items-start flex-column">
+            <div class="d-flex align-items-center justify-content-center" style="gap:.5rem">
+              <img style="border-radius:50%; height: 2rem; width:2rem; object-fit: cover;" src="assets\img\default._CR0,0,1024,1024_SX48_.jpg">
+              <span class="fw-bold text-center d-flex">Marcelo Lopes</span>
+            </div>
+            <div class="d-flex justify-content-center align-items center" style="gap:.5rem"> 
+              <span class="d-flex align-items-center"><img style="max-height: 1rem;" src="assets\img\Captura de tela 2023-11-26 235902.png"></span><span class="fw-bold">Excepcional</span></div>
+            <div>
+              <span class="mt-2  d-flex">Avaliado no Brasil em 23 de setembro de 2023
+              </span>
+            </div>
+            <span class="fw-bold" style="color:#c45500 !important;">Compra verificada</span>
+            <span class="" style="max-width: 100%;">Li super rápido. Um romance com thriller, bastante suspense, que faz vc querer saber tudo que vai acontecer. Uma escritora vai continuar o trabalho de outra escritora que está invalidada para continuar, e pra isso vai pra casa dela pra estudar todos os rascunhos e anotações que ela tem, pra aprender sobre como continuar os livros… é incrível, tem um plot twist gigantesco no final</span>
+            <span class=" mt-2">2 pessoas acharam isso útil</span>
+            <div class="d-flex justify-content-center align-items-center"><span class="d-flex justify-content-center align-items-center" style="border:solid 1px #2b2b2b; border-radius:6px; padding:0rem 1rem;">Útil</span>&nbsp;<span>|</span>&nbsp;
+            <span>Denunciar</span></div>
+          </div>
+
+          <!-- Final Comentário -->
+
+          <!-- Início Comentário-->
+
+          <div class="comentario d-flex justify-content-center align-items-start flex-column">
+            <div class="d-flex align-items-center justify-content-center" style="gap:.5rem">
+              <img style="border-radius:50%; height: 2rem; width:2rem; object-fit: cover;" src="assets\img\default._CR0,0,1024,1024_SX48_.jpg">
+              <span class="fw-bold text-center d-flex">Maiara da Silva</span>
+            </div>
+            <div class="d-flex justify-content-center align-items center" style="gap:.5rem"> 
+              <span class="d-flex align-items-center"><img style="max-height: 1rem;" src="assets\img\Captura de tela 2023-11-26 235902.png"></span><span class="fw-bold">Super Recomendo!!</span></div>
+            <div>
+              <span class="mt-2  d-flex">Avaliado no Brasil em 23 de setembro de 2023
+              </span>
+            </div>
+            <span class="fw-bold" style="color:#c45500 !important;">Compra verificada</span>
+            <span class="" style="max-width: 100%;">Li super rápido. Um romance com thriller, bastante suspense, que faz vc querer saber tudo que vai acontecer. Uma escritora vai continuar o trabalho de outra escritora que está invalidada para continuar, e pra isso vai pra casa dela pra estudar todos os rascunhos e anotações que ela tem, pra aprender sobre como continuar os livros… é incrível, tem um plot twist gigantesco no final</span>
+            <span class=" mt-2">1 pessoa achou isso útil</span>
+            <div class="d-flex justify-content-center align-items-center"><span class="d-flex justify-content-center align-items-center" style="border:solid 1px #2b2b2b; border-radius:6px; padding:0rem 1rem;">Útil</span>&nbsp;<span>|</span>&nbsp;
+            <span>Denunciar</span></div>
+          </div>
+
+          <!-- Final Comentário -->
+
+          <!-- Início Comentário-->
+
+          <div class="comentario d-flex justify-content-center align-items-start flex-column">
+            <div class="d-flex align-items-center justify-content-center" style="gap:.5rem">
+              <img style="border-radius:50%; height: 2rem; width:2rem; object-fit: cover;" src="assets\img\default._CR0,0,1024,1024_SX48_.jpg">
+              <span class="fw-bold text-center d-flex">Jéssica Costa</span>
+            </div>
+            <div class="d-flex justify-content-center align-items center" style="gap:.5rem"> 
+              <span class="d-flex align-items-center"><img style="max-height: 1rem;" src="assets\img\Captura de tela 2023-11-26 235902.png"></span><span class="fw-bold">Aprovadíssimo.</span></div>
+            <div>
+              <span class="mt-2  d-flex">Avaliado no Brasil em 24 de setembro de 2023
+              </span>
+            </div>
+            <span class="fw-bold" style="color:#c45500 !important;">Compra verificada</span>
+            <span class="" style="max-width: 100%;">Li super rápido. Um romance com thriller, bastante suspense, que faz vc querer saber tudo que vai acontecer. Uma escritora vai continuar o trabalho de outra escritora que está invalidada para continuar, e pra isso vai pra casa dela pra estudar todos os rascunhos e anotações que ela tem, pra aprender sobre como continuar os livros… é incrível, tem um plot twist gigantesco no final</span>
+            <span class=" mt-2">3 pessoas acharam isso útil</span>
+            <div class="d-flex justify-content-center align-items-center"><span class="d-flex justify-content-center align-items-center" style="border:solid 1px #2b2b2b; border-radius:6px; padding:0rem 1rem;">Útil</span>&nbsp;<span>|</span>&nbsp;
+            <span>Denunciar</span></div>
+          </div>
+
+          <!-- Final Comentário -->
+
+          <!-- Início Comentário-->
+
+          <div class="comentario d-flex justify-content-center align-items-start flex-column">
+            <div class="d-flex align-items-center justify-content-center" style="gap:.5rem">
+              <img style="border-radius:50%; height: 2rem; width:2rem; object-fit: cover;" src="assets\img\default._CR0,0,1024,1024_SX48_.jpg">
+              <span class="fw-bold text-center d-flex">Fernando Ribeiro</span>
+            </div>
+            <div class="d-flex justify-content-center align-items center" style="gap:.5rem"> 
+              <span class="d-flex align-items-center"><img style="max-height: 1rem;" src="assets\img\Captura de tela 2023-11-26 235902.png"></span><span class="fw-bold">Testado e Comprovado </span></div>
+            <div>
+              <span class="mt-2  d-flex">Avaliado no Brasil em 24 de setembro de 2023
+              </span>
+            </div>
+            <span class="fw-bold" style="color:#c45500 !important;">Compra verificada</span>
+            <span class="" style="max-width: 100%;">Li super rápido. Um romance com thriller, bastante suspense, que faz vc querer saber tudo que vai acontecer. Uma escritora vai continuar o trabalho de outra escritora que está invalidada para continuar, e pra isso vai pra casa dela pra estudar todos os rascunhos e anotações que ela tem, pra aprender sobre como continuar os livros… é incrível, tem um plot twist gigantesco no final</span>
+            <span class=" mt-2">1 pessoa achou isso útil</span>
+            <div class="d-flex justify-content-center align-items-center"><span class="d-flex justify-content-center align-items-center" style="border:solid 1px #2b2b2b; border-radius:6px; padding:0rem 1rem;">Útil</span>&nbsp;<span>|</span>&nbsp;
+            <span>Denunciar</span></div>
+          </div>
+
+          <!-- Final Comentário -->
+
+         
+       
+
+
+
+
+        </div>
+        
+    </div>  
+  
+
+    <footer class="fluid-container p-4" style="background: black; color:#fff !important;">
+        <div class="container mobile-flex d-flex align-items-center justify-content-between text-center">
+            <span class="fw-bold">Copyright 2023 – ® Todos os Direitos Reservados</span> <span class="fw-bold"> Termos de Uso - Privacidade</span>
+        </div>
+    </footer>
+     <!-- Modal -->
+<div class="modal fade" id="exitModal" tabindex="-1" aria-labelledby="exitModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="exitModalLabel">Espera um pouco!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5 class="fw-bold">Oportunidade Única</h5>
+        Tem certeza que deseja sair da página?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var isModalOpen = false; // Variável para controlar o estado do modal
+
+document.addEventListener('mouseout', function(event) {
+  // Verifica se o cursor está saindo da parte superior da viewport
+  if (event.clientY <= 0 && !isModalOpen) {
+    var exitModal = new bootstrap.Modal(document.getElementById('exitModal'));
+    exitModal.show();
+    isModalOpen = true; // Define que o modal está aberto
+
+    exitModal._element.addEventListener('hidden.bs.modal', function () {
+      isModalOpen = false; // Redefine quando o modal é fechado
+    });
+  }
+});
+</script>
+
+<script>
+               function updateNumber() {
+                 var min = 2170;
+                 var max = 2200;
+                 var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+                 document.getElementById('random-number').textContent = randomNumber;
+               }
+               
+               setInterval(updateNumber, 1000);  // Atualiza o número a cada 1 segundo
+               updateNumber();  // Chama a função uma vez no início para preencher o span inicialmente
+             </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="assets/js/index.js"></script>
+
+</body>
+
+
+</html>
