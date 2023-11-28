@@ -17,6 +17,7 @@
 
 <body>
     <style>
+
         body
         {
             display: flex;
@@ -32,7 +33,7 @@
         }
     </style>
     <div class="p-2 d-flex justify-content-center align-items-center " style="background: rgb(255, 255, 255);">
-      <span style="color:#000000 !important; font-size: 1.3rem !important; font-family: 'Montserrat', sans-serif;" class="text-center">⚠️ Esse vídeo só estará disponivel até: <span style="color:#000000 !important; font-size: 1.3rem !important; font-family: 'Montserrat', sans-serif;" class="fw-bold">segunda-feira, 27 de novembro de 2023</span></span>
+      <span style="color:#000000 !important; font-size: 1.3rem; font-family: 'Montserrat', sans-serif;" class="text-center nav-font">⚠️ Esse vídeo só estará disponivel até: <span style="color:#000000 !important; font-size: 1.3rem; font-family: 'Montserrat', sans-serif;" class="fw-bold nav-font">segunda-feira, 27 de novembro de 2023</span></span>
 
     </div>
 
@@ -50,7 +51,23 @@
     z-index: 10; /* para garantir que fique acima do vídeo */
 }
             @media(max-width:768px)
-            {
+            {   
+
+                .font-mobile
+                {
+                  font-size:1rem !important;
+                }
+
+                .nav-font
+                {
+                  font-size:.9rem !important;
+                }
+
+                .separator
+                {
+                  display: none !important;
+                }
+
                 .navbar-brand img
                 {
 
@@ -157,12 +174,9 @@
     </header>
     <style>
       @import url('https://fonts.cdnfonts.com/css/amazon-ember');
+      @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap');
 
-
-      span
-      {
-        font-size: .8rem !important;
-      }
+    
 
       h5
       {
@@ -175,11 +189,30 @@
       }
     </style>
     <div class="mb-5 d-flex flex-column align-items-center container" style="flex-grow: 1;">
-        <img class="mt-4" style="max-width: 100%; width:40rem;" src="assets\img\Dra-Andreia-mostramcomo-preparar-A-VERDADEIRA-RECEITA-DA-BANANA-que-ELIMINA-11kg-de-gordura-em-21-DIAS-5-1024x256-1.png">
-        <div id="vid_6547b6c0793d6300082386b2" style="position:relative;width:100%; max-width:45rem; padding: 56.25% 0 0;"><img id="thumb_6547b6c0793d6300082386b2" src="https://images.converteai.net/63e28235-a56b-493a-b819-6f8ea68e30c4/players/6547b6c0793d6300082386b2/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">
+<div class="d-flex my-4 justify-content-center align-items-center mobile-flex" style="gap:.5rem">
+  <img style="width: 5rem; height: 5rem; border-radius: 50%; object-fit: cover !important;" src="assets\img\bruno-rodrigues-279xIHymPYY-unsplash.jpg"><span style="font-size:3.5rem !important" class="separator font-mobile">|</span><span class="fw-bold text-center font-mobile" style="font-size:1.5rem; font-family: 'Montserrat', sans-serif;">Dr pede para <span class="fw-bold font-mobile" style="font-family:'Montserrat', sans-serif; color:red; font-size:1.3rem;">beber 2 copos </span>dessa<br>receita que <span class="fw-bold font-mobile" style="font-family:'Montserrat', sans-serif; color:red; font-size:1.3rem;">queima 9kg de gordura em 14 dias </span></span>
+
+</div>        <div id="vid_6547b6c0793d6300082386b2" style="position:relative;width:100%; max-width:45rem; padding: 56.25% 0 0;"><img id="thumb_6547b6c0793d6300082386b2" src="https://images.converteai.net/63e28235-a56b-493a-b819-6f8ea68e30c4/players/6547b6c0793d6300082386b2/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">
             <div id="backdrop_6547b6c0793d6300082386b2" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_6547b6c0793d6300082386b2">var s=document.createElement("script");s.src="https://scripts.converteai.net/63e28235-a56b-493a-b819-6f8ea68e30c4/players/6547b6c0793d6300082386b2/player.js",s.async=!0,document.head.appendChild(s);</script>
 
-        <script type="text/javascript" id="scr_6547b6c0793d6300082386b2">var s=document.createElement("script");s.src="https://scripts.converteai.net/63e28235-a56b-493a-b819-6f8ea68e30c4/players/6547b6c0793d6300082386b2/player.js",s.async=!0,document.head.appendChild(s);</script>       <span class="mt-2 fw-bold" style="color:#000000; font-size: 1rem !important;"><span style="font-size: 1rem !important;" id="random-number"></span> Pessoas acessando</span>
+        <script type="text/javascript" id="scr_6547b6c0793d6300082386b2">var s=document.createElement("script");s.src="https://scripts.converteai.net/63e28235-a56b-493a-b819-6f8ea68e30c4/players/6547b6c0793d6300082386b2/player.js",s.async=!0,document.head.appendChild(s);</script>       <span class="mt-2 fw-bold text-center" style="color:#000000; font-size: 1rem !important;"><span>
+          👁️</span>&nbsp;<span style="font-size: 1rem !important;" id="random-number"></span>&nbsp;Pessoas acessando</span>
+          <div class="d-flex justify-content-center align-items mobile-flex" style="gap:1rem">
+          <img style="width:20rem; max-width: 100%;"  src="assets\img\dra_bianca-1 (1).png"> 
+          <div class="text-center d-flex align-items-center justify-content-center flex-column">
+            <h3 class="fw-bold" style="font-family: 'Mulish', sans-serif;">
+              Dra. Bianca Bonete
+
+            </h3>
+            <p style="word-break: break-word !important;font-family: 'Mulish', sans-serif;">
+              
+Nutricionista Integrativa com 18 anos de experiência clínica,<br>
+ela é especialista em modulação intestinal e emagrecimento
+saudável,<br> e tem ajudado milhares de pessoas a emagrecerem
+e conquistarem o corpo ideal.
+            </p>
+            <img style="max-width: 100%;" src="assets\img\assinatura_dra.png">
+        </div></div>
         <div class="mt-5 d-flex justify-content-center align-items">
           <img style="max-height: 6rem; max-width: 100%;" src="assets\img\kqedby8187536.png">
         </div>
