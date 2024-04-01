@@ -1,0 +1,606 @@
+<html>
+<head>
+  <meta charset="utf-8">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!--
+<script>
+
+ 
+  
+ 
+
+  var back_redirect_back_link = 'https://paginavendas.onrender.com/index3.html';
+  
+   
+  
+   
+  
+  history.pushState({}, "", '/index2.html', location.href);
+  
+  history.pushState({}, "", '/index2.html', location.href);
+  
+   
+  
+   
+  
+  window.onpopstate = function () {
+  
+  setTimeout(function () {
+  
+  location.href = back_redirect_back_link;
+  
+  }, 1);
+  
+  };
+  
+   
+  
+   
+  
+  </script>
+
+-->
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    (() => {
+      const redirectToUrl = '/index3';
+
+      history.pushState(null, document.title, window.location.href);
+      window.addEventListener('popstate', function(event) {
+        window.location.href = redirectToUrl;
+      });
+    })();
+  });
+</script>
+
+
+
+</head>
+
+<body style="background: #000;">
+
+  <div class="novoContainer align-items-center flex-column justify-content-center" style="position: fixed; height: 100%; z-index:9999; width: 100%; background:rgba(0, 0, 0, 0.45); display: none; top:0;">
+
+    <div class="container d-flex flex-column align-items-center text-center p-3" style="background:#fff; border-radius:12px; max-width: 50rem; width: 90%;">
+
+        <span style="font-size:1.6rem; font-weight: 600;">Parabéns!</span>
+        <span style="font-size:1.6rem; font-weight: 600;">Você recebeu um desconto de R$100,00!!</span>
+
+        <a class="mt-3 fechar-btn" style="color:#fff; background: red; text-decoration:none; font-weight: 600; cursor: pointer; padding:.7rem 2rem; width: fit-content; border-radius: 30px;">Continuar</a>
+
+
+    </div>
+    
+</div>
+<script>
+  novoContainer = document.querySelector('.novoContainer')
+  fechar = document.querySelector('.fechar-btn')  
+  document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(function () {
+          novoContainer.style.display = 'flex'
+      }, 1000); // Delay de 5 segundos
+  });
+  fechar.addEventListener('click', function(event)
+  {
+    event.stopPropagation()
+    novoContainer.style.display = 'none'
+  })
+
+  novoContainer.addEventListener('click', function(event)
+  {
+    event.stopPropatagion()
+    if(event.target === this)
+    {
+      this.style.display = 'none'
+    }
+  })
+
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+    </style>
+    
+  
+    <style>
+      .accordion-button::after
+      {
+        background-image: url('arrow-down-sign-to-navigate.png') !important;
+      }
+      h4
+      {
+        font-size: 2rem;
+      }
+      .padding-5
+      {
+        padding:1.5rem;
+      }
+      .img-mobile
+      {
+        display:none;
+      }
+
+      p, span
+      {
+        font-family: 'Poppins' !important;
+      }
+      @media(max-width:768px)
+      { 
+
+        .accordion-body span
+        {
+          color:#fff !important;
+          font-size: 1rem !important;
+        }
+
+        .accordion-body
+        {
+          color:#fff !important;
+          font-size: 1rem !important;
+          font-family: 'Poppins' !important;
+        }
+
+        h4
+        {
+          font-size: 1.2rem !important;
+          margin-bottom: .5rem !important;
+        }
+
+        h4.mb3
+        {
+          margin-bottom: .5rem !important;
+        }
+
+        p, span
+        {
+          font-size: 1.2rem !important;
+        }
+        .padding-5
+        {
+          padding:0 !important;
+        }
+
+        .img-desktop
+        {
+          display:none;
+        }
+
+        .img-mobile
+        {
+          display:flex !important;
+        }
+
+        p, h1, h2, h3, span
+        {
+          text-align:center !important;
+        }
+      }
+
+      h2, h3
+      {
+        color: #fff !important;
+      }
+      
+        .index8
+        {
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+        }
+
+        .accordion-item
+
+        {   max-width: 45rem;
+            width: 100%;
+            background:#000 !important;
+          
+        }
+        
+        .accordion-button 
+        {
+            background:linear-gradient(to right, black, #59019E);
+            padding:1.5rem 1.25rem;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
+            </style>
+            
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
+                </style>
+
+                <style>
+
+                    @media(max-width:768px)
+                    {
+                        .flex-mobile
+                        {
+                            flex-direction: column !important;
+                        }
+                    }
+
+                </style>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+  
+    <header class="d-flex justify-content-center align-items-center p-4" style="background: #000;">
+
+        <span class="text-center" style="color:#fff; font-family: 'Poppins'; font-size:1.2rem;">992 pessoas compraram nas últimas 24h</span>
+
+    </header>
+    <div data-aos="fade-down " class="fluid-container " style="height:30rem; width:100%; background:linear-gradient(to right, rgba(0, 0, 0, 0.645), #d7ff4550), url('nik-shuliahin-BuNWp1bL0nc-unsplash.jpg');
+    background-position-x:70%; background-position-y: 25%;">
+    <div class="container d-flex flex-column align-items-center justify-content-center" style="height: 100%;">
+    <h2 style="font-family: 'Rubik'; color:#fff !important" data-aos="fade-up"  data-aos-duration="800" class="text-center">🎁 PARABÉNS 🎁</h2>
+<h5 style="font-family: 'Rubik'; color:#fff !important; font-weight: 300; max-width: 70rem;" class="text-center mt-3    ">         Você é o nosso visitante número 10.000 e acaba de ganhar R$100,00 de DESCONTO.
+</h5>
+<h5 style="font-family: 'Rubik'; color:#fff !important; font-weight: 300; max-width: 70rem;" class="text-center mt-3    ">                     A cada 10.000 visitantes sorteamos um homem para receber um        <span class="fw-bold" style="color:#ff0000; text-shadow: 1px 1px #000;">DESCONTO EXCLUSIVO</span> </h3>
+
+
+</h5>
+<h3 class="mt-2" style="font-family: 'M PLUS Rounded 1c';">
+  De: <span style="color:red !important">R$197</span> por R$97
+</h3>
+<a class="w-100 d-flex justify-content-center" style="text-decoration: none;" href="seu-dominio"><button data-aos="fade-up"  data-aos-duration="1200" class="mt-3" style="border:none; outline:none; border-radius:7px; background:#7C00DE; padding:.5rem 4rem; color:#fff !important; font-size:1.6rem; font-family: 'M PLUS Rounded 1c', sans-serif;
+">Ter Acesso</button></a>
+</div>
+</div>
+<div class="fluid-container">
+    <div class="container mt-5  d-flex flex-mobile justify-content-center align-items-center" style="gap:2rem">
+        <p style="color:#fff; font-size:1.4rem; font-family: 'Rubik'; font-weight: 300;">Fácil e prático, este aplicativo inovador proporciona uma maneira natural e discreta de enfrentar desafios íntimos diretamente do seu celular. Com o Semente App, a solução para uma vida íntima mais plena e satisfatória está sempre ao seu alcance, garantindo conveniência e discrição a todo momento.</p>
+
+        <img style="height:20rem; max-width: 100%; border-radius:8px;" src="hand-holding-phone-mockup-cutout-file-png 1.png">
+    </div>
+</div>
+<h2 style="color:#fff; font-family: 'M PLUS Rounded 1c';" class="text-center mt-5">TRUQUE DA SEMENTE</h2>
+
+<div class="container">
+<div class=" mt-3" style="border-radius:12px; background: linear-gradient(rgba(0, 0, 0, 0.615), rgba(128, 0, 128, 0.473)), url('maddi-bazzocco-UhrHTmVBzzE-unsplash.jpg'); height: 25rem; width: 100%; background-size:cover; background-position: center;">
+
+
+</div>
+</div>
+<p class="container mt-3 mb-5" style="color: #fff; font-size: 1.3rem; text-align: justify;">O TRUQUE DA SEMENTE não dava para ser compartilhado em um simples ebook porque cada pessoa tem uma idade, altura e peso ideal diferente... então o truque das sementes tem que ser feito especificamente pra você, o corpo de cada pessoa responde a uma proporção diferente, e a mesma coisa que remédio a quantidade para cada um varia, por isso decidi fazer um aplicativo, dessa forma conseguiria atender todos vocês de forma rápida sem mais precisar ficar calculando tudo na mão... para fazer você ter ereções duras e rígidas  como uma rocha AINDA HOJE</p>
+
+<div class="container p-4 mt-4 mb-4  d-flex justify-content-center">
+    <span  style="font-size: 1.6rem; color:#fff !important;" class="text-center">Nosso conteúdo é atualizado, feito e pensado especialmente para te atender,<br> tendo como os 3 bônus principais:</span>
+</div>
+
+<div class="container d-flex flex-mobile" style="gap: 1rem;">
+  <div class="d-flex flex-column align-items-center" style="min-height: 25rem; width: 100%;">
+<h3 class="mt-3 mb-2" style="font-family: 'M PLUS Rounded 1c', sans-serif">FONTE DO VIGOR</h3>
+<div style="width:100%; border-radius: 12px; height:25rem; background: linear-gradient(rgba(0, 0, 0, 0.615), rgba(128, 0, 128, 0.3)), url('jordan-opel-ybLtRkjHprE-unsplash.jpg'); background-size:cover;background-position: center; " >
+</div>
+<p style="color:#fff; text-align: justify; font-size: 1.1rem;" class=" mt-3" >FONTE DO VIGOR, é um documento que venho montando desde o primeiro dia de estudos que aplico em meus pacientes, para aumentar a testosterona de forma natural, basicamente é uma nova receita que eleva sua testosterona a níveis de jovens com 18 anos de idade, em resumo isso vai aumentar seu desejo sexual e agora com seu pau maior  mais duro e mais rígido, tudo que você precisa é muito desejo para manter uma relação sexual ativa  com sua parceira  
+
+  Garanto pra você que tua parceira vai te olhar com admiração e respeito.</p>
+
+</div>
+<div class="d-flex flex-column align-items-center" style=" width: 100%;">
+  <h3 class="mt-3 mb-2" style="font-family: 'M PLUS Rounded 1c', sans-serif">PAU DE LEÃO</h3>
+<div style="width:100%; border-radius: 12px; height:25rem; background: linear-gradient(rgba(0, 0, 0, 0.615), rgba(128, 0, 128, 0.3)), url('jeff-lemond-bwr9XpsYK98-unsplash.jpg'); background-size:cover;background-position: center; " >
+</div>
+<p style="color:#fff; text-align: justify; font-size: 1.1rem;" class=" mt-3" >PAU DE LEÃO, você vai descobrir o segredo sujo da indústria pornô, como homens como meu marido ou você conseguem ter um pênis monumental, e como eles combinam o truque da semente com mais 1 ingrediente secreto que consegue aumentar até 5 cm em poucos meses... recomendo não usar demais depois de aumentar ele não vai voltar ao tamanho anterior... mas fique tranquilo no aplicativo terá tudo explicado sobre dosagem e quanto você pode usar</p>
+</div>
+
+
+<div class="d-flex flex-column align-items-center" style=" width: 100%;">
+  <h3 class="mt-3 mb-2" style="font-family: 'M PLUS Rounded 1c', sans-serif">DEMORA GOZAGEM</h3>
+<div style="width:100%; border-radius: 12px; height:25rem; background: linear-gradient(rgba(0, 0, 0, 0.615), rgba(128, 0, 128, 0.3)), url('thomas-bormans-JsTmUnHdVYQ-unsplash.jpg'); background-size:cover;background-position: center; " >
+</div>
+<p style="color:#fff; text-align: justify; font-size: 1.1rem;" class=" mt-3" >DEMORA-GOZAGEM, essa e uma técnica que usam os atores pornô para acabar de vez com a ejaculação precoce nele eu vou te passar um chá caseiro que eles usam para acalmar a sensibilidade do seu pênis  te fazendo manter uma ereção por horas.... podendo mostrar a sua esposa o macho que você....  realmente é.</p>
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+<div class="container mt-5 mb-5 d-flex justify-content-center">
+<img class="img-desktop" style="height: 45rem;" src="Captura de tela 2024-01-15 035301.png">
+<img class="img-mobile" style="max-width:100%" src="Captura de tela 2024-01-15 124006.png">
+</div>
+
+
+
+<div class="fluid-container p-5" style="background:linear-gradient(to right,#7C00DE, black);">
+  <div class="container d-flex justify-content-center padding-5 flex-column align-items-center" style="gap:1.5rem">
+<h2 style="font-family: 'M PLUS Rounded 1c';">Aproveite essa oportunidade!</h2>
+<p style="font-family: 'Rubik'; color:#fff !important; font-size: 1.3rem !important;">Estamos oferecendo uma oferta exclusiva para que você possa mudar de vez a sua vida</p>
+
+<h3 style="font-family: 'M PLUS Rounded 1c';">
+  De: <span style="color:red !important">R$197</span> por R$97
+</h3>
+<a style="text-decoration: none;" class="w-100 d-flex justify-content-center align-items-center" href="seu-link-checkout"><button style="background: #7C00DE; font-family: 'M PLUS Rounded 1c'; color: #fff; font-size: 1.6rem; font-weight: 500; border-radius: 30px; padding: .7rem 2rem; outline: none; border: none;">Comprar Agora</button></a>
+</div>
+</div>
+
+
+<div class="mt-5 container d-flex justify-content-center">
+
+  
+  <img style="max-height: 13em; max-width: 100%;" src="selo-de-qualidade_1-1-min (1).png">
+  
+</div>
+
+<a class="d-flex align-items-center justify-content-center flex-mobile" style="gap:.5rem; text-decoration: underline; text-decoration-color: #000000;" href="https://api.whatsapp.com/send?phone=5541987195972"><h2 class="text-center" style="color:000">Tire duvidas ou solicite degustação do app clicando aqui</h2> 
+        
+  <img style="height: 4rem;" src="whatsapp (2).png"></a>
+
+
+<div id="index8" >
+
+    <div class="container mt-5 d-flex flex-column align-items-center">
+      <h2 style="color:#ffffff !important; margin-bottom: 1.5rem;">Perguntas Frequentes</h2>
+      <div class="accordion accordion-flush" id="basicAccordion" style="width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;">
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#basicAccordionCollapseOne" aria-expanded="false"
+              aria-controls="basicAccordionCollapseOne"
+              style="background-color: #0d9032; border-radius:12px; color: white;">
+              <span style="font-family: 'Rubik'; font-size: 1.3rem;">
+                Quais são as formas de pagamento?</span>
+            </button>
+          </h2>
+          <div id="basicAccordionCollapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#basicAccordion">
+            <div class="accordion-body">
+              <span style="font-family: 'Rubik'; color:#fff; font-size: 1rem;">
+                Você pode pagar em até 5x no boleto bancário sem juros ou em até 12x no cartão de crédito com juros da plataforma.
+
+
+            </span>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#basicAccordionCollapseTwo" aria-expanded="false"
+              aria-controls="basicAccordionCollapseTwo"
+              style="background-color: #0d9032; border-radius:12px; color: white;">
+              <span style="font-family: 'Rubik'; font-size: 1.3rem;">
+                Serve para quem nunca fez antes?
+            </span>
+            </button>
+          </h2>
+          <div id="basicAccordionCollapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#basicAccordion">
+            <div class="accordion-body">
+              <span style="font-family: 'Rubik'; color:#fff; font-size: 1rem;">
+                Serve para qualquer tipo de pessoa, que já iniciou ou deseja iniciar.
+            </span>
+            </div>
+          </div>
+        </div>
+
+     
+
+      
+
+
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#basicAccordionCollapseFive" aria-expanded="false"
+              aria-controls="basicAccordionCollapseFive"
+              style="background-color: #0d9032; border-radius:12px;  color: white;">
+              <span style="font-family: 'Rubik'; font-size: 1.3rem;">
+
+              Fica gravado?
+              </span></button>
+          </h2>
+          <div id="basicAccordionCollapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#basicAccordion">
+            <div class="accordion-body">
+              <span style="font-family: 'Rubik'; color:#fff; font-size: 1rem;">
+                Sim! Você terá acesso a uma pasta no drive com todas as gravações e materiais extras.
+            </span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#basicAccordionCollapseSix" aria-expanded="false"
+              aria-controls="basicAccordionCollapseSix"
+              style="background-color: #0d9032; border-radius:12px; color: white;">
+              <span style="font-family: 'Rubik'; font-size: 1.3rem;">
+
+              Tem materiais extras? </span></button>
+          </h2>
+          <div id="basicAccordionCollapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+            data-bs-parent="#basicAccordion">
+            <div class="accordion-body">
+              <span style="font-family: 'Rubik'; color:#fff; font-size: 1rem;">
+
+                Sim! Você terá acesso a uma pasta no drive com todas as gravações e materiais extras.
+
+
+            </span>  </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+   
+  <div class="container  text-center d-flex justify-content-center">
+
+    <h1 class="text-center mt-5">
+        <span style="color:#fff; font-family: 'Rubik'; font-weight:500;">VEJA OS DEPOIMENTOS ABAIXO:👇🏽
+
+        </span> </h1>
+    </div>
+
+<div class="container  text-center d-flex justify-content-center">
+
+
+</div>
+<div class="container " >
+    <div class="container mt-4 text-center d-flex justify-content-center">
+
+        <span class="mt=3 mb-3">
+           <h4 style="color:red !important; font-family:'Rubik'; font-weight:500;"> De Problemas a Paixão: A Incrível História</h4>    
+        </span>    
+    </div>
+
+<div style="padding:47.306176084099874% 0 0 0;position:relative;"><iframe frameborder="0" allowfullscreen src="https://scripts.converteai.net/db5cbd8e-56ce-4e76-a05c-63546f690e24/players/659aee657081d50009e84f99/embed.html" id="ifr_659aee657081d50009e84f99" style="position:absolute;top:0;left:0;width:100%;height:100%;" referrerpolicy="origin"></iframe></div>
+
+<div class="text-center d-flex justify-content-center">
+
+
+</div>
+<div class=" mt-4 text-center d-flex justify-content-center">
+
+    <a class="comprar d-flex text-center justify-content-center align-items-center" href="" style="max-width: 40rem; border-radius:4px; word-break:break-word; color: #fff !important; font-weight: 600; text-decoration: none; padding:.7rem 2rem; background: #59019E; font-size:19px">QUERO TER ACESSO AO SEGREDO DA SEMENTE</a>
+
+</div>
+
+</div>
+
+
+
+<div class="container mt-4 ">
+
+    <div class="container mt-4 text-center d-flex justify-content-center">
+        
+
+        <span class=" mt-3 mb-3">
+            <h4 style="color:red !important; font-family:'Rubik'; font-weight:500;">
+Perdeu o parceiro pelo recado do vizinho   
+</h4>  
+        </span>        
+    </div>
+
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe frameborder="0" allowfullscreen src="https://scripts.converteai.net/db5cbd8e-56ce-4e76-a05c-63546f690e24/players/659aefa2d0a2ae00099a62cb/embed.html" id="ifr_659aefa2d0a2ae00099a62cb" style="position:absolute;top:0;left:0;width:100%;height:100%;" referrerpolicy="origin"></iframe></div>
+
+    <div class=" mt-4 text-center d-flex justify-content-center">
+
+        <a class="comprar d-flex text-center justify-content-center align-items-center" href="" style="max-width: 40rem; border-radius:4px; word-break:break-word; color: #fff !important; font-weight: 600; text-decoration: none; padding:.7rem 2rem; background: #59019E; font-size:19px">QUERO TER ACESSO AO SEGREDO DA SEMENTE</a>
+
+    </div>
+</div>
+
+
+<div class="container mt-4 ">
+
+    
+
+    <div class="container mt-4 text-center d-flex justify-content-center">
+
+        <span class=" mt-3 mb-3">
+            <h4 style="color:red !important; font-family:'Rubik'; font-weight:500;">
+Estava tudo cagado mais conseguiu ficar madeira            </h4>
+
+        </span>            
+    </div>
+    <div style="padding:56.54450261780105% 0 0 0;position:relative;"><iframe frameborder="0" allowfullscreen src="https://scripts.converteai.net/db5cbd8e-56ce-4e76-a05c-63546f690e24/players/659aef0cc8f0d7000af0a04d/embed.html" id="ifr_659aef0cc8f0d7000af0a04d" style="position:absolute;top:0;left:0;width:100%;height:100%;" referrerpolicy="origin"></iframe></div>   
+    <div class=" mt-4 text-center d-flex justify-content-center">
+
+        <a class="comprar d-flex text-center justify-content-center align-items-center" href="" style="max-width: 40rem; border-radius:4px; word-break:break-word; color: #fff !important; font-weight: 600; text-decoration: none; padding:.7rem 2rem; background: #59019E; font-size:19px">QUERO TER ACESSO AO SEGREDO DA SEMENTE</a>
+
+    </div>
+</div>
+
+
+
+<div class="container mt-4 ">
+
+    <div class="container mt-4 text-center d-flex justify-content-center">
+
+        <span class=" mt-3 mb-3">
+            <h4 style="color:red !important; font-family:'Rubik'; font-weight:500;">
+Do sertão pra gaiola, macho de respeito            </h4>
+
+        </span>         
+    </div>
+
+
+        <div style="padding:56.54450261780105% 0 0 0;position:relative;"><iframe frameborder="0" allowfullscreen src="https://scripts.converteai.net/db5cbd8e-56ce-4e76-a05c-63546f690e24/players/659aefdad0a2ae00099a62cd/embed.html" id="ifr_659aefdad0a2ae00099a62cd" style="position:absolute;top:0;left:0;width:100%;height:100%;" referrerpolicy="origin"></iframe></div>        <div class=" mt-4 text-center d-flex justify-content-center">
+
+        <a class="comprar d-flex text-center justify-content-center align-items-center" href="" style="max-width: 40rem; border-radius:4px; word-break:break-word; color: #fff !important; font-weight: 600; text-decoration: none; padding:.7rem 2rem; background: #59019E; font-size:19px">QUERO TER ACESSO AO SEGREDO DA SEMENTE</a>
+
+    </div>
+
+</div>
+
+<div class="container mt-4 ">
+
+  <div class="container mt-4 text-center d-flex justify-content-center">
+
+      <span class=" mt-3 mb-3">
+          <h4 style="color:red !important; font-family:'Rubik'; font-weight:500;">
+Do sertão pra gaiola, macho de respeito            </h4>
+
+      </span>         
+  </div>
+
+
+        <div style="padding:56.54450261780105% 0 0 0;position:relative; margin: 0;"><iframe frameborder="0" allowfullscreen src="WhatsApp Video 2024-01-24 at 23.53.08.mp4" id="ifr_659aefdad0a2ae00099a62cd" style="position:absolute;top:0;left:0;width:100%;height:100%;" referrerpolicy="origin"></iframe></div>        <div class=" mt-4 text-center d-flex justify-content-center">
+
+      <a class="comprar d-flex text-center justify-content-center align-items-center" href="" style="max-width: 40rem; border-radius:4px; word-break:break-word; color: #fff !important; font-weight: 600; text-decoration: none; padding:.7rem 2rem; background: #59019E; font-size:19px">QUERO TER ACESSO AO SEGREDO DA SEMENTE</a>
+
+  </div>
+
+</div>
+
+
+<div class="container mt-4 ">
+
+  <div class="container mt-4 text-center d-flex justify-content-center">
+
+      <span class=" mt-3 mb-3">
+          <h4 style="color:red !important;">
+              Tava tudo perdido e agora virou bagunça           </h4>
+
+      </span>         
+  </div>
+
+
+  <div style="padding:56.25% 0 0 0;position:relative;"><iframe frameborder="0" allowfullscreen src="https://scripts.converteai.net/db5cbd8e-56ce-4e76-a05c-63546f690e24/players/65b450bd12ab8300085de3b0/embed.html" id="ifr_65b450bd12ab8300085de3b0" style="position:absolute;top:0;left:0;width:100%;height:100%;" referrerpolicy="origin"></iframe></div>            
+  <div class=" mt-4 text-center d-flex justify-content-center">
+
+      <a class="comprar d-flex text-center justify-content-center align-items-center" href="" style="max-width: 40rem; border-radius:4px; word-break:break-word; color: #345c00 !important; font-weight: 600; text-decoration: none; padding:.7rem 2rem; background: #24C53A; font-size:19px">QUERO TER ACESSO AO SEGREDO DO SEMENTE</a>    
+  </div>
+
+</div>
+
+
+</div>
+
+  <footer class="d-flex justify-content-center mt-5" style="background: #59019E !important;">
+    <span class="p-4 text-center" style="color:#fff; font-family: 'Rubik'; font-size: 1.1rem;">©SementeAPP 2023 - Todos os Direitos Reservados</span>
+  </footer>
+<script>
+        AOS.init();
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
