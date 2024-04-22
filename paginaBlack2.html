@@ -80,41 +80,6 @@
 </head>
 
 <body>
-  <div class="container d-flex flex-column align-items-center text-center p-3" style="background:#fff; border-radius:12px; max-width: 50rem; width: 90%;">
-
-    <span style="font-size:1.6rem; font-weight: 600;">Parabéns!</span>
-    <span style="font-size:1.6rem; font-weight: 600;">Você recebeu um desconto de R$100,00!!</span>
-
-    <a class="mt-3 fechar-btn" style="color:#fff; background: red; text-decoration:none; font-weight: 600; cursor: pointer; padding:.7rem 2rem; width: fit-content; border-radius: 30px;">Continuar</a>
-
-
-</div>
-
-</div>
-<script>
-novoContainer = document.querySelector('.novoContainer')
-fechar = document.querySelector('.fechar-btn')  
-document.addEventListener('DOMContentLoaded', function () {
-  setTimeout(function () {
-      novoContainer.style.display = 'flex'
-  }, 1000); // Delay de 5 segundos
-});
-fechar.addEventListener('click', function(event)
-{
-event.stopPropagation()
-novoContainer.style.display = 'none'
-})
-
-novoContainer.addEventListener('click', function(event)
-{
-event.stopPropatagion()
-if(event.target === this)
-{
-  this.style.display = 'none'
-}
-})
-
-</script>
  
     <style>
 
@@ -140,26 +105,16 @@ if(event.target === this)
           }
         }
     </style>
-
-<script>
-  // Define a função que simula o clique
-  function simularClique(selector) {
-      var elemento = document.querySelector(selector);
-      if (elemento) {
-          elemento.click();
-      } else {
-          console.log('Elemento não encontrado para o seletor: ' + selector);
-      }
-  }
-  
-  // Define um temporizador para executar a função após um intervalo de tempo
-  // Por exemplo, 5000 milissegundos (5 segundos)
-  setTimeout(function() {
-      simularClique('body');
-  }, 5000);
-      </script>
     <div class="p-2 d-flex justify-content-center align-items-center " style="background: rgb(255, 255, 255);">
-      <span style="color:#000000 !important; font-size: 1.3rem; font-family: 'Montserrat', sans-serif;" class="text-center nav-font">⚠️ Esse vídeo só estará disponivel até: <span style="color:#000000 !important; font-size: 1.3rem; font-family: 'Montserrat', sans-serif;" class="fw-bold nav-font">  <div id="dataHoje"></div>
+      <span style="color:#000000 !important; font-size: 1.3rem; font-family: 'Montserrat', sans-serif;" class="text-center nav-font">
+        ⚠️ Este video solo estará disponible hasta: <span style="color:#000000 !important; font-size: 1.3rem; font-family: 'Montserrat', sans-serif;" class="fw-bold nav-font"> Viernes, 12 de abril de 2024
+
+
+
+
+
+
+
         <script>
 
           function formatarData(data) {
@@ -298,22 +253,23 @@ if(event.target === this)
                   <li class="nav-item">
                     <a class="nav-link " >
                         <span class="circle"></span>
-                        <span class="fw-bold" style="font-size: 1rem !important;">Ao vivo</span>  </a>
+                        <span class="fw-bold" style="font-size: 1rem !important;">En vivo</span>  </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link fw-bold" ><span class="fw-bold" style="font-size: 1rem !important;">Política</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" ><span class="fw-bold" style="font-size: 1rem !important;">Economia</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" ><span class="fw-bold" style="font-size: 1rem !important;">Esportes</span></a>
-                  </li>
-                  <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" ><span class="fw-bold" style="font-size: 1rem !important;">Economía</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" ><span class="fw-bold" style="font-size: 1rem !important;">Deportes</span></a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" ><span class="fw-bold" style="font-size: 1rem !important;">Pop</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" ><span class="fw-bold" style="font-size: 1rem !important;">Viagem e Gastronomia</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" ><span class="fw-bold" style="font-size: 1rem !important;">Viajes y Gastronomía</span></a>
+                </li>
                   </li>
                 </ul>
                 <span style="margin-left:1rem;">
@@ -347,15 +303,24 @@ if(event.target === this)
         font-family: 'Amazon Ember', sans-serif !important;
       }
     </style>
-    <div class="mb-5 d-flex flex-column align-items-center container" style="flex-grow: 1;">
       <div class="mt-5 d-flex justify-content-center align-items-center flex-column">
       <h3 class="text-center h3-mobile" style="font-family: 'Yanone Kaffeesatz', sans-serif !important;font-size:4rem; width: 70%;">Recupera tu Cabello y Olvida la Calvicie en Solo 4 Semanas con este Método 100% Natural Sin Cirugías ni Medicamentos Costosos</h3>
    
     </div>
-    <div style="padding:56.25% 0 0 0;position:relative;"><iframe frameborder="0" allowfullscreen src="https://scripts.converteai.net/db5cbd8e-56ce-4e76-a05c-63546f690e24/players/64e27b597b941e0009cb3597/embed.html" id="ifr_64e27b597b941e0009cb3597" style="position:absolute;top:0;left:0;width:100%;height:100%;" referrerpolicy="origin"></iframe></div>
-          <span>
+<div class="contaiener">
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe frameborder="0" allowfullscreen src="https://scripts.converteai.net/db5cbd8e-56ce-4e76-a05c-63546f690e24/players/64e27b597b941e0009cb3597/embed.html" id="ifr_64e27b597b941e0009cb3597" style="position:absolute;top:0;left:0;width:100%;height:100%;" referrerpolicy="origin"></iframe></div>            
+  </div>
+    <span class="mt-2 fw-bold text-center" style="color:#000000; font-size: 1rem !important;"><span>
           
-          👁️</span>&nbsp;<span style="font-size: 1rem !important;" id="random-number"></span>&nbsp;Pessoas acessando</span> 
+      👁️</span>&nbsp;<span style="font-size: 1rem !important;" id="random-number"></span>&nbsp;Personas Accediendo
+
+
+
+
+
+
+
+    </span> 
         <a class="justify-content-center align-items-center mb-3" style="display:none; font-family:'Montserrat', sans-serif; text-decoration: none; width:100%;" href="https://go.perfectpay.com.br/PPU38CMR1PH"><button style="margin-top: 1.5rem" class="sua-classe delay">COMPRAR</button></a>
 
         <style>
@@ -423,10 +388,83 @@ if(event.target === this)
       document.querySelector('.delay').style.display = 'block';
     }, 12);
     </script>
-     
+     <div class="novoContainer align-items-center flex-column justify-content-center" style="position: fixed; height: 100%; width: 100vw; z-index:999999; width: 100%; background:rgba(0, 0, 0, 0.45); display: none; top:0;">
+
+      <div class=" d-flex flex-column justify-content-center align-items-center text-center p-5" style="background:rgb(253, 217, 57); width: 100%; height: 100%;">
+          <img style="height: 15rem;" src="https://paginavendas.onrender.com/lion-51-1024x1024%20(1).png">
+          <span class="fw-bold" style="font-size:2.6rem; font-family:'Montserrat'; max-width: 60rem; font-weight: 600 !important; color: #000000 !important; font-weight: bold;">¿Estás preparado para curar tu disfunción eréctil y ser un león en la cama?
+
+          </span>
+        
+          <div class="d-flex  w-100 justify-content-center" style="gap: 1rem;">
+          <a class="mt-3 fechar-btn" style="color:#000000; background: rgb(255, 255, 255);border: solid 3px #000; font-size: 1.4rem; font-family: 'Montserrat'; text-decoration:none; font-weight: 700; cursor: pointer; padding:.7rem 2rem; width: fit-content; border-radius: 30px;">Sí
+
+          </a>
+          <a class="mt-3 fechar-btn" style="color:#000000; background: rgb(255, 255, 255);border: solid 3px #000; font-size: 1.4rem; font-family: 'Montserrat'; text-decoration:none; font-weight: 700; cursor: pointer; padding:.7rem 2rem; width: fit-content; border-radius: 30px;">No
+
+
+
+
+
+          </a>
+
+        </div>
+      </div>
+      
+  </div>
+  <style>
+    @media(max-width:768px)
+    {
+
+      .novoContainer div span
+      {
+        font-size: 1.4rem !important;
+      }
+
+      .novoContainer div div a
+
+      {
+        font-size: 1.3rem !important;
+      }
+    }
+
+  </style>
+<script>
+novoContainer = document.querySelector('.novoContainer')
+fechar = document.querySelectorAll('.fechar-btn')  
+document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(function () {
+        novoContainer.style.display = 'flex'
+    }, 0); // Delay de 5 segundos
+});
+fechar.forEach((btn) =>
+{
+  btn.addEventListener('click', function(event)
+{
+  event.stopPropagation()
+  novoContainer.style.display = 'none'
+})
+})
+
+novoContainer.addEventListener('click', function(event)
+{
+  event.stopPropatagion()
+  if(event.target === this)
+  {
+    this.style.display = 'none'
+  }
+})
+
+</script>
           <div class="mt-5 d-flex justify-content-center align-items">
             <span class="p-4 d-flex flex-column align-items-center justify-content-center" style="    background: linear-gradient(to right, #0a171e, rgb(7 34 50)); border-radius:12px;">
-              <span class="visto-em" style="color:#bcb6b6 !important; font-size:2rem; font-family: 'Montserrat', sans-serif;">COMO VISTO EM:</span>
+              <span class="visto-em" style="color:#bcb6b6 !important; font-size:2rem; font-family: 'Montserrat', sans-serif;">COMO VISTO EN:
+
+
+
+
+
+              </span>
             <img style=" max-width: 100%; width:50rem;" src="assets\img\Captura de tela 2023-11-28 194819.png">
           </span>
           </div>
@@ -440,11 +478,19 @@ if(event.target === this)
             <p style="word-break: break-word !important;font-family: 'Mulish', sans-serif;">
               
 
-Doutora especialista em impotência sexual com 17 anos de experiencia clínica. Ela e especialista em disfunção erétil e ajuda atualmente a milhares de homens a conquistarem o desempenho sexual desejado.
+              Doctora especialista en impotencia sexual con 17 años de experiencia clínica. Es experta en disfunción eréctil y actualmente ayuda a miles de hombres a alcanzar el desempeño sexual deseado.
+
+
+
+
+
+
+
+
             </p>
         </div></div>
        
-        <div>
+        <div class="container">
           <div class="nav d-flex mt-5 p-3 justify-content-between align-items-center" style="background: #f3f3f3;">
             <img style="max-height: 2rem;" src="Captura_de_tela_2024-02-01_193657-removebg-preview (1).png"> <img src="assets\img\Captura de tela 2023-11-29 110318.png" style="max-height: 3rem;">
           </div>
@@ -454,11 +500,9 @@ Doutora especialista em impotência sexual com 17 anos de experiencia clínica. 
 
          <div class="align-items-start d-flex flex-column w-50 mobile-100">
          
-          <p style="font-size:1rem;font-family: 'Helvetica Neue', sans-serif;"><span style="font-style: italic;font-size:1rem;font-family: 'Helvetica Neue', sans-serif;">Data:</span>&nbsp;&nbsp;28 de março de 2023</p>
-          <p style="font-size:1rem;font-family: 'Helvetica Neue', sans-serif;"><span style="font-style: italic;font-size:1rem;font-family: 'Helvetica Neue', sans-serif;">Fonte:</span>&nbsp;&nbsp;Universidade de Adelaide
-          </p>
-            
-          <p style="font-size:1rem;font-family: 'Helvetica Neue', sans-serif;"><span style="font-style: italic;font-size:1rem;font-family: 'Helvetica Neue', sans-serif;">Resumo:</span>&nbsp;&nbsp;Homens que sofrem de disfunção sexual podem ter sucesso na reversão do problema com ajuda da reposição de óxido nítrico e concentrando-se em fatores de estilo de vida, e não apenas confiando em medicamentos, de acordo com pesquisas. Os pesquisadores destacaram a incidência de disfunção erétil e falta de desejo sexual entre homens com idade entre 35 e 80 anos.</p>
+          <p style="font-size:1rem;font-family: 'Helvetica Neue', sans-serif;"><span style="font-style: italic;font-size:1rem;font-family: 'Helvetica Neue', sans-serif;">Fecha:</span>&nbsp;&nbsp;28 de marzo de 2023</p>
+          <p style="font-size:1rem;font-family: 'Helvetica Neue', sans-serif;"><span style="font-style: italic;font-size:1rem;font-family: 'Helvetica Neue', sans-serif;">Fuente:</span>&nbsp;&nbsp;Universidad de Adelaide</p>
+          <p style="font-size:1rem;font-family: 'Helvetica Neue', sans-serif;"><span style="font-style: italic;font-size:1rem;font-family: 'Helvetica Neue', sans-serif;">Resumen:</span>&nbsp;&nbsp;Hombres que sufren de disfunción sexual pueden tener éxito en revertir el problema con ayuda de la reposición de óxido nítrico y concentrándose en factores de estilo de vida, y no solo confiando en medicamentos, según investigaciones. Los investigadores destacaron la incidencia de disfunción eréctil y falta de deseo sexual entre hombres de 35 a 80 años.</p>
           <div class="d-flex">
   
           <p style="font-size:1rem;font-family: 'Helvetica Neue', sans-serif;">Compart ... <i class="bi bi-facebook"></i>&nbsp;</p>
@@ -474,15 +518,14 @@ Doutora especialista em impotência sexual com 17 anos de experiencia clínica. 
         </div> 
         <div class="align-items-start d-flex flex-column w-50 mobile-100">
          
-          <p style="font-size:1rem;font-family: 'Helvetica Neue', sans-serif;">"A boa notícia é que nosso estudo também descobriu que uma grande proporção de homens estava superando naturalmente os problemas de disfunção erétil. A taxa de remissão daqueles com disfunção erétil foi de 29%, o que é muito alto. Isso mostra que muitos desses fatores que afetam os homens são modificável, oferecendo-lhes a oportunidade de fazer algo sobre sua condição", diz o professor Wittert.
-
-            O principal autor do artigo, Dr. Sean Martin, do Centro de Saúde Masculina da Fundação Freemasons da Universidade de Adelaide, diz: “Mesmo quando é necessária medicação para ajudar na função erétil, é provável que seja consideravelmente mais eficaz se os fatores de estilo de vida também forem abordados.</p>
-         
-        </div> 
+          <p style="font-size:1rem;font-family: 'Helvetica Neue', sans-serif;">"La buena noticia es que nuestro estudio también descubrió que una gran proporción de hombres estaba superando naturalmente los problemas de disfunción eréctil. La tasa de remisión de aquellos con disfunción eréctil fue del 29%, lo cual es muy alto. Esto muestra que muchos de estos factores que afectan a los hombres son modificables, ofreciéndoles la oportunidad de hacer algo sobre su condición", dice el profesor Wittert.
+            El autor principal del artículo, el Dr. Sean Martin, del Centro de Salud Masculina de la Fundación Freemasons de la Universidad de Adelaide, dice: “Incluso cuando es necesaria medicación para ayudar en la función eréctil, es probable que sea considerablemente más efectiva si los factores de estilo de vida también son abordados.</p>
+            
+            </div>
       </div>
       </div>  
 
-        <div class=" mt-5 comentarios d-flex flex-column justify-content-start align-items-start">
+        <div class=" mt-5 comentarios container d-flex flex-column justify-content-start align-items-start">
 
           <span class="mt-3 fw-bold mb-2 w-100 text-center" style="font-family: 'Helvetica Neue', sans-serif !important;
           ">Mostrando 10 comentários</span>
@@ -498,15 +541,17 @@ Doutora especialista em impotência sexual com 17 anos de experiencia clínica. 
 
                   <div class="blue-part d-flex flex-column w-100 justify-content-center align-items-start p-3 back" style="background:rgb(233, 238, 240); border-radius:20px;">
 
-                      <span class="fw-bold" style="color:rgb(10, 10, 92)">Ana Lucia Schmitz</span>
+                      <span class="fw-bold" style="color:rgb(10, 10, 92)">Ana Lucía Schmitz
+                      </span>
 
-                      <span class="text-start" >Meu marido depois que tomou nunca vi ele com tanto fogo, toda hora quer fazer brincadeira e olha que tem 43 anos...
+                      <span class="text-start" >Mi esposo después de tomarlo nunca lo vi con tanto fuego, siempre quiere jugar y eso que tiene 43 años...
+
 
                       </span>
                   </div>
 
                   <div class="lower-part d-flex w-100 justify-content-between ">
-                      <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Curtir</span><span class="p-1">Responder</span><span class="p-1">Agora</span></div>
+                      <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Me gusta</span><span class="p-1">Responder</span><span class="p-1">Ahora</span></div>
                       <div class="d-flex p-1 justify-content-center align-items-center h-50" style="margin-top:-1rem;     box-shadow: 5px 0 10px #00000050;
                       background:rgb(233, 238, 240); border-radius:20px;"><span style="padding:.1rem"><img src="l.png" style="max-width:1rem; border-radius:50%;"></span>
                           <span  style="padding:.1rem"><img src="h.png" style=" max-width:1rem"></span>
@@ -531,15 +576,17 @@ Doutora especialista em impotência sexual com 17 anos de experiencia clínica. 
 
                 <div class="blue-part d-flex flex-column w-100 justify-content-center align-items-start p-3 back" style="background:rgb(233, 238, 240); border-radius:20px;">
 
-                    <span class="fw-bold" style="color:rgb(10, 10, 92)">Fernando Gomes</span>
+                    <span class="fw-bold" style="color:rgb(10, 10, 92)">Fernando Gómez
+                    </span>
 
                     <span class="text-start" >
-                      Estava cético no início, mas decidi dar uma chance. Felizmente, a receita funcionou além das minhas expectativas. Vi melhorias significativas em pouquissimo tempo.
+                      Estaba escéptico al principio, pero decidí darle una oportunidad. Afortunadamente, la receta funcionó más allá de mis expectativas. Vi mejoras significativas en muy poco tiempo.
+
                     </span>
                 </div>
 
                 <div class="lower-part d-flex w-100 justify-content-between ">
-                    <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Curtir</span><span class="p-1">Responder</span><span class="p-1">1min</span></div>
+                    <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Me gusta</span><span class="p-1">Responder</span><span class="p-1">1min</span></div>
                     <div class="d-flex p-1 justify-content-center align-items-center h-50" style="margin-top:-1rem;     box-shadow: 5px 0 10px #00000050;
                     background:rgb(233, 238, 240); border-radius:20px;"><span style="padding:.1rem"><img src="l.png" style="max-width:1rem; border-radius:50%;"></span>
                         <span  style="padding:.1rem"><img src="h.png" style=" max-width:1rem"></span>
@@ -563,14 +610,16 @@ Doutora especialista em impotência sexual com 17 anos de experiencia clínica. 
                   <div class="blue-part d-flex flex-column justify-content-center align-items-start p-3 back w-100" style="background:rgb(233, 238, 240); border-radius:20px;">
 
                       <span class="fw-bold" style="color:rgb(10, 10, 92)">
-                          Karoline Rosa</span>
+                        Carolina Rosa
+</span>
 
                       <span class="text-start" >
-                        Realmente dá resultado, estou impressionada com o meu namorado!</span>
+                        Realmente da resultado, ¡estoy impresionada con mi novio!
+</span>
                   </div>
 
                   <div class="lower-part d-flex w-100 justify-content-between ">
-                      <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Curtir</span><span class="p-1">Responder</span><span class="p-1">6min</span></div>
+                      <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Me gusta</span><span class="p-1">Responder</span><span class="p-1">6min</span></div>
                       <div class="d-flex p-1 justify-content-center align-items-center h-50" style="margin-top:-1rem;     box-shadow: 5px 0 10px #00000050;
                       background:rgb(233, 238, 240); border-radius:20px;"><span  style="padding:.1rem"><img src="l.png" style="max-width:1rem; border-radius:50%;"></span>
                           <span style="padding:.1rem"><img src="h.png" style=" max-width:1rem"></span>
@@ -593,15 +642,17 @@ Doutora especialista em impotência sexual com 17 anos de experiencia clínica. 
 
                 <div class="blue-part d-flex flex-column w-100 justify-content-center align-items-start p-3 back" style="background:rgb(233, 238, 240); border-radius:20px;">
 
-                    <span class="fw-bold" style="color:rgb(10, 10, 92)">Igor Francisco Gomes</span>
+                    <span class="fw-bold" style="color:rgb(10, 10, 92)">Igor Francisco Gómez
+                    </span>
 
                     <span class="text-start" >
-                      Experimentei a receita sugerida e fiquei surpreso com os resultados. Foi uma mudança notável para mim, e a sensação de confiança que isso trouxe foi imensa. Recomendo a quem procura uma solução natural.
+                      Probé la receta sugerida y me sorprendieron los resultados. Fue un cambio notable para mí, y la sensación de confianza que esto trajo fue inmensa. Lo recomiendo a quien busque una solución natural.
+
                     </span>
                 </div>
 
                 <div class="lower-part d-flex w-100 justify-content-between ">
-                    <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Curtir</span><span class="p-1">Responder</span><span class="p-1">1min</span></div>
+                    <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Me gusta</span><span class="p-1">Responder</span><span class="p-1">1min</span></div>
                     <div class="d-flex p-1 justify-content-center align-items-center h-50" style="margin-top:-1rem;     box-shadow: 5px 0 10px #00000050;
                     background:rgb(233, 238, 240); border-radius:20px;"><span style="padding:.1rem"><img src="l.png" style="max-width:1rem; border-radius:50%;"></span>
                         <span  style="padding:.1rem"><img src="h.png" style=" max-width:1rem"></span>
@@ -629,13 +680,13 @@ Doutora especialista em impotência sexual com 17 anos de experiencia clínica. 
 
                       <span class="text-start" >
                           
-                        Conheci um rapaz semana passada acredito que ele usa isso aí, foi o melhor sexo da minha vida!
+                        Conocí a un chico la semana pasada, creo que él usa eso, ¡fue el mejor sexo de mi vida!
 
                       </span>
                   </div>
 
                   <div class="lower-part d-flex w-100 justify-content-between ">
-                      <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Curtir</span><span class="p-1">Responder</span><span class="p-1">2h</span></div>
+                      <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Me gusta</span><span class="p-1">Responder</span><span class="p-1">2h</span></div>
                       <div class="d-flex p-1 justify-content-center align-items-center h-50" style="margin-top:-1rem;     box-shadow: 5px 0 10px #00000050;
                       background:rgb(233, 238, 240); border-radius:20px;"><span  style="padding:.1rem"><img src="l.png" style="max-width:1rem; border-radius:50%;"></span>
                           <span  style="padding:.1rem"><img src="h.png" style=" max-width:1rem"></span>
@@ -661,12 +712,18 @@ Doutora especialista em impotência sexual com 17 anos de experiencia clínica. 
                     <span class="fw-bold" style="color:rgb(10, 10, 92)">Rafael Silva</span>
 
                     <span class="text-start" >
-                      Como alguém que prefere abordagens naturais, fiquei muito satisfeito com o efeito dessa receita. É bom saber que podemos contar com alternativas naturais que realmente funcionam.
+                      Como alguien que prefiere enfoques naturales, quedé muy satisfecho con el efecto de esta receta. Es bueno saber que podemos contar con alternativas naturales que realmente funcionan.
+
+
+
+
+
+
                     </span>
                 </div>
 
                 <div class="lower-part d-flex w-100 justify-content-between ">
-                    <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Curtir</span><span class="p-1">Responder</span><span class="p-1">3h</span></div>
+                    <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Me gusta</span><span class="p-1">Responder</span><span class="p-1">3h</span></div>
                     <div class="d-flex p-1 justify-content-center align-items-center h-50" style="margin-top:-1rem;     box-shadow: 5px 0 10px #00000050;
                     background:rgb(233, 238, 240); border-radius:20px;"><span style="padding:.1rem"><img src="l.png" style="max-width:1rem; border-radius:50%;"></span>
                         <span  style="padding:.1rem"><img src="h.png" style=" max-width:1rem"></span>
@@ -691,16 +748,23 @@ Doutora especialista em impotência sexual com 17 anos de experiencia clínica. 
                   <div class="blue-part d-flex flex-column justify-content-center align-items-start p-3 back" style="background:rgb(233, 238, 240); border-radius:20px;">
 
                       <span class="fw-bold" style="color:rgb(10, 10, 92)">
-                          Maria Gabriella Corrêa</span>
+                        Maria Gabriella Correa
+
+                      </span>
 
                       <span class="text-start" >
-                        Meu noivo está tomando a mistura todos os dias e estou amando os resultados 😍😍
+                        Mi novio está tomando la mezcla todos los días y estoy amando los resultados 😍😍
+
+
+
+
+
 
                       </span>
                   </div>
 
                   <div class="lower-part d-flex w-100 justify-content-between ">
-                      <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Curtir</span><span class="p-1">Responder</span><span class="p-1">1d</span></div>
+                      <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Me gusta</span><span class="p-1">Responder</span><span class="p-1">1d</span></div>
                       <div class="d-flex p-1 justify-content-center align-items-center h-50" style="margin-top:-1rem;     box-shadow: 5px 0 10px #00000050;
                       background:rgb(233, 238, 240); border-radius:20px;"><span  style="padding:.1rem"><img src="l.png" style="max-width:1rem; border-radius:50%;"></span>
                           <span  style="padding:.1rem"><img src="h.png" style=" max-width:1rem"></span>
@@ -726,12 +790,18 @@ Doutora especialista em impotência sexual com 17 anos de experiencia clínica. 
                     <span class="fw-bold" style="color:rgb(10, 10, 92)">Marcelo Pereira</span>
 
                     <span class="text-start" >
-                      O impacto positivo na minha vida íntima foi notável, e minha parceira também notou a diferença.
+                      El impacto positivo en mi vida íntima fue notable, y mi pareja también notó la diferencia.
+
+
+
+
+
+
                     </span>
                 </div>
 
                 <div class="lower-part d-flex w-100 justify-content-between ">
-                    <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Curtir</span><span class="p-1">Responder</span><span class="p-1">1d</span></div>
+                    <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Me gusta</span><span class="p-1">Responder</span><span class="p-1">1d</span></div>
                     <div class="d-flex p-1 justify-content-center align-items-center h-50" style="margin-top:-1rem;     box-shadow: 5px 0 10px #00000050;
                     background:rgb(233, 238, 240); border-radius:20px;"><span style="padding:.1rem"><img src="l.png" style="max-width:1rem; border-radius:50%;"></span>
                         <span  style="padding:.1rem"><img src="h.png" style=" max-width:1rem"></span>
@@ -759,13 +829,19 @@ Doutora especialista em impotência sexual com 17 anos de experiencia clínica. 
                           Jalyne Borck</span>
 
                       <span class="text-start" >
-                        Uma amiga minha disse que comprou para o marido, e que realmente apimentou e muito a relação do casal, vou mandar agora pro meu marido!
+                        Una amiga mía dijo que lo compró para su esposo, y que realmente condimentó mucho la relación de la pareja, ¡ahora se lo enviaré a mi esposo!
+
+
+
+
+
+
 
                       </span>
                   </div>
 
                   <div class="lower-part d-flex w-100 justify-content-between ">
-                      <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Curtir</span><span class="p-1">Responder</span><span class="p-1">2d</span></div>
+                      <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Me gusta</span><span class="p-1">Responder</span><span class="p-1">2d</span></div>
                       <div class="d-flex p-1 justify-content-center align-items-center h-50" style="margin-top:-1rem;     box-shadow: 5px 0 10px #00000050;
                       background:rgb(233, 238, 240); border-radius:20px;"><span style="padding:.1rem"><img src="l.png" style="max-width:1rem; border-radius:50%;"></span>
                           <span  style="padding:.1rem"><img src="h.png" style=" max-width:1rem"></span>
@@ -793,13 +869,19 @@ Doutora especialista em impotência sexual com 17 anos de experiencia clínica. 
 
                       <span class="text-start" >
                           
-                        Estou surpresa com os comentários fiquei muito pensativa, vou indicar pro meu namorado ele acha que não precisa mas só anda indisposto pra transar!
+                        Estoy sorprendida con los comentarios, me dejaron pensativa, voy a sugerírselo a mi novio, él cree que no lo necesita pero siempre está indispuesto para tener sexo.
+
+
+
+
+
+
 
                       </span>
                   </div>
 
                   <div class="lower-part d-flex w-100 justify-content-between ">
-                      <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Curtir</span><span class="p-1">Responder</span><span class="p-1">2d</span></div>
+                      <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Me gusta</span><span class="p-1">Responder</span><span class="p-1">2d</span></div>
                       <div class="d-flex p-1 justify-content-center align-items-center h-50" style="margin-top:-1rem;     box-shadow: 5px 0 10px #00000050;
                       background:rgb(233, 238, 240); border-radius:20px;"><span  style="padding:.1rem"><img src="l.png" style="max-width:1rem; border-radius:50%;"></span>
                           <span  style="padding:.1rem"><img src="h.png" style=" max-width:1rem"></span>
@@ -821,15 +903,21 @@ Doutora especialista em impotência sexual com 17 anos de experiencia clínica. 
 
                 <div class="blue-part d-flex flex-column w-100 justify-content-center align-items-start p-3 back" style="background:rgb(233, 238, 240); border-radius:20px;">
 
-                    <span class="fw-bold" style="color:rgb(10, 10, 92)">André Lopes</span>
+                    <span class="fw-bold" style="color:rgb(10, 10, 92)">Andre Ramiro</span>
 
                     <span class="text-start" >
-                      "Fiquei impressionado com a rapidez com que comecei a ver os resultados. Essa receita não só ajudou com a ereção, mas também melhorou minha autoestima. É algo que definitivamente vou continuar usando.
+                      Me impresionó la rapidez con la que comencé a ver los resultados. Esta receta no solo ayudó con la erección, sino que también mejoró mi autoestima. Es algo que definitivamente voy a seguir usando.
+
+
+
+
+
+
                     </span>
                 </div>
 
                 <div class="lower-part d-flex w-100 justify-content-between ">
-                    <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Curtir</span><span class="p-1">Responder</span><span class="p-1">3d</span></div>
+                    <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Me gusta</span><span class="p-1">Responder</span><span class="p-1">3d</span></div>
                     <div class="d-flex p-1 justify-content-center align-items-center h-50" style="margin-top:-1rem;     box-shadow: 5px 0 10px #00000050;
                     background:rgb(233, 238, 240); border-radius:20px;"><span style="padding:.1rem"><img src="l.png" style="max-width:1rem; border-radius:50%;"></span>
                         <span  style="padding:.1rem"><img src="h.png" style=" max-width:1rem"></span>
@@ -858,13 +946,14 @@ Doutora especialista em impotência sexual com 17 anos de experiencia clínica. 
 
                       <span class="text-start" >
                           
-                        Estou amando, meu namorado está me surprieendendo toda vez que transamos!
+                        Estoy encantada, ¡mi novio me sorprende cada vez que tenemos sexo!
+
 
                       </span>
                   </div>
 
                   <div class="lower-part d-flex w-100 justify-content-between ">
-                      <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Curtir</span><span class="p-1">Responder</span><span class="p-1">3d</span></div>
+                      <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Me gusta</span><span class="p-1">Responder</span><span class="p-1">3d</span></div>
                       <div class="d-flex p-1 justify-content-center align-items-center h-50" style="margin-top:-1rem;     box-shadow: 5px 0 10px #00000050;
                       background:rgb(233, 238, 240); border-radius:20px;"><span  style="padding:.1rem"><img src="l.png" style="max-width:1rem; border-radius:50%;"></span>
                           <span  style="padding:.1rem"><img src="h.png" style=" max-width:1rem"></span>
@@ -898,7 +987,7 @@ Doutora especialista em impotência sexual com 17 anos de experiencia clínica. 
                   </div>
 
                   <div class="lower-part d-flex w-100 justify-content-between ">
-                      <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Curtir</span><span class="p-1">Responder</span><span class="p-1">4d</span></div>
+                      <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Me gusta</span><span class="p-1">Responder</span><span class="p-1">4d</span></div>
                       <div class="d-flex p-1 justify-content-center align-items-center h-50" style="margin-top:-1rem;     box-shadow: 5px 0 10px #00000050;
                       background:rgb(233, 238, 240); border-radius:20px;"><span  style="padding:.1rem"><img src="l.png" style="max-width:1rem; border-radius:50%;"></span>
                           <span  style="padding:.1rem"><img src="h.png" style=" max-width:1rem"></span>
@@ -923,12 +1012,14 @@ Doutora especialista em impotência sexual com 17 anos de experiencia clínica. 
                     <span class="fw-bold" style="color:rgb(10, 10, 92)">Carlos Henrique</span>
 
                     <span class="text-start" >
-                      Foi uma mudança notável para mim, e a sensação de confiança que isso trouxe foi imensa. Recomendo a quem procura uma solução natural.
+                      ¡Lo recomiendo totalmente para los hombres, les encantará como nunca antes! 💪
+
+
                     </span>
                 </div>
 
                 <div class="lower-part d-flex w-100 justify-content-between ">
-                    <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Curtir</span><span class="p-1">Responder</span><span class="p-1">5d</span></div>
+                    <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Me gusta</span><span class="p-1">Responder</span><span class="p-1">5d</span></div>
                     <div class="d-flex p-1 justify-content-center align-items-center h-50" style="margin-top:-1rem;     box-shadow: 5px 0 10px #00000050;
                     background:rgb(233, 238, 240); border-radius:20px;"><span style="padding:.1rem"><img src="l.png" style="max-width:1rem; border-radius:50%;"></span>
                         <span  style="padding:.1rem"><img src="h.png" style=" max-width:1rem"></span>
@@ -957,14 +1048,21 @@ Doutora especialista em impotência sexual com 17 anos de experiencia clínica. 
 
                       <span class="text-start" >
                          
-                        Se todos os homens conhecessem isso, seria um sonho para nós mulheres!
+                        ¡Si todos los hombres conocieran esto, sería un sueño para nosotras las mujeres!
+
+
+
+
+
+
+
 
 
                       </span>
                   </div>
 
                   <div class="lower-part d-flex w-100 justify-content-between ">
-                      <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Curtir</span><span class="p-1">Responder</span><span class="p-1">5d</span></div>
+                      <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Me gusta</span><span class="p-1">Responder</span><span class="p-1">5d</span></div>
                       <div class="d-flex p-1 justify-content-center align-items-center h-50" style="margin-top:-1rem;     box-shadow: 5px 0 10px #00000050;
                       background:rgb(233, 238, 240); border-radius:20px;"><span  style="padding:.1rem"><img src="l.png" style="max-width:1rem; border-radius:50%;"></span>
                           <span  style="padding:.1rem"><img src="h.png" style=" max-width:1rem"></span>
@@ -992,13 +1090,19 @@ Doutora especialista em impotência sexual com 17 anos de experiencia clínica. 
 
                       <span class="text-start" >
                          
-                        Maridos não fiquem com vergonha comprem e usem, sua esposa vai amar!
+                        ¡Esposos, no tengan vergüenza, compren y usen esto, su esposa lo amará!
+
+
+
+
+
+
 
                       </span>
                   </div>
 
                   <div class="lower-part d-flex w-100 justify-content-between ">
-                      <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Curtir</span><span class="p-1">Responder</span><span class="p-1">6d</span></div>
+                      <div class="container d-flex justify-content-start align-items-center"><span class="p-1">Me gusta</span><span class="p-1">Responder</span><span class="p-1">6d</span></div>
                       <div class="d-flex p-1 justify-content-center align-items-center h-50" style="margin-top:-1rem;     box-shadow: 5px 0 10px #00000050;
                       background:rgb(233, 238, 240); border-radius:20px;"><span  style="padding:.1rem"><img src="l.png" style="max-width:1rem; border-radius:50%;"></span>
                           <span  style="padding:.1rem"><img src="h.png" style=" max-width:1rem"></span>
@@ -1098,16 +1202,22 @@ Doutora especialista em impotência sexual com 17 anos de experiencia clínica. 
               
 
       </div>
-    </div>
+
 
 
   
-    <div style="padding:56.25% 0 0 0;position:relative;"><iframe frameborder="0" allowfullscreen src="https://scripts.converteai.net/db5cbd8e-56ce-4e76-a05c-63546f690e24/players/64e27b597b941e0009cb3597/embed.html" id="ifr_64e27b597b941e0009cb3597" style="position:absolute;top:0;left:0;width:100%;height:100%;" referrerpolicy="origin"></iframe></div>    
     
     <footer class="fluid-container p-4" style="background: black; color:#fff !important;">
         <div class="container mobile-flex d-flex flex-column align-items-center justify-content-between text-center" style="gap:1rem;">
        
-            <span style="font-size:1rem; color:#bcb6b6;" class="text-center copyright-font">Este site e todo o seu conteúdo são protegidos pelas leis de direitos autorais e propriedade intelectual de todos os países. O autor reserva-se o direito de reclamar uma indenização caso estas condições não sejam respeitadas.
+            <span style="font-size:1rem; color:#bcb6b6;" class="text-center copyright-font">Este sitio y todo su contenido están protegidos por las leyes de derechos de autor y propiedad intelectual de todos los países. El autor se reserva el derecho de reclamar una indemnización en caso de que estas condiciones no sean respetadas.
+
+
+
+
+
+
+
             </span>
             </span>
        
@@ -1148,7 +1258,6 @@ document.addEventListener('mouseout', function(event) {
   }
 });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 <script>
                function updateNumber() {
